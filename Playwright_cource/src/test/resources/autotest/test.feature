@@ -9,3 +9,8 @@ Feature: Playwright Tests
     Given I open the Playwright footer page
     When I check for the footer
     Then I verify the footer is displayed
+
+  Scenario: Check page H1
+    Given I open the Playwright H1 header page
+    When I check for the H1 header
+    Then I close the browser after checking tests
