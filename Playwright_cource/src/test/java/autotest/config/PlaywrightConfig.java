@@ -1,6 +1,5 @@
 package autotest.config;
 
-
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
@@ -10,7 +9,6 @@ import org.springframework.context.annotation.Scope;
 
 @Configuration
 public class PlaywrightConfig {
-    private final String testPageUrl = "https://algosstile.github.io/vue-app/index.html";
 
     @Bean
     public Playwright playwright() {
@@ -30,6 +28,6 @@ public class PlaywrightConfig {
     }
 
     public String getTestPageUrl() {
-        return testPageUrl;
+        return "https://algosstile.github.io/vue-app/index.html";
     }
 }
