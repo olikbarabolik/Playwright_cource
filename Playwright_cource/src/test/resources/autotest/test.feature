@@ -10,6 +10,16 @@ Feature: Playwright Tests
     When I check for the footer
     Then I verify the footer is displayed
 
+  Scenario: Check logo
+     Given I open the Playwright logo page
+     When I check for the logo
+     Then I verify the logo is displayed
+
+  Scenario: Check navigation menu
+     Given I open the Playwright pagination page
+     When I check for the pagination number
+     Then I verify the pagination is displayed
+
   Scenario: Check page H1
     Given I open the Playwright H1 header page
     When I check for the H1 header
